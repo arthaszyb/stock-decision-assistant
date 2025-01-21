@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股票决策助手</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">股票决策助手</a>
+        <input type="text" placeholder="搜索股票代码/名称" class="form-control mr-sm-2">
+        <div class="user-profile">
+            <img src="user-avatar.png" alt="用户头像" class="avatar">
+            <button class="btn btn-outline-success my-2 my-sm-0">登录/注册</button>
+        </div>
+    </header>
+
+    <!-- 主体内容 -->
+    <main class="container mt-4">
+        <div class="row">
+            <aside class="col-md-3">
+                <h2>自选股列表</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">股票代码1 - 名称1 - 最新价格 - 涨跌幅</li>
+                    <li class="list-group-item">股票代码2 - 名称2 - 最新价格 - 涨跌幅</li>
+                    <!-- 更多自选股 -->
+                </ul>
+            </aside>
+            <section class="col-md-6">
+                <h2>主要市场指数</h2>
+                <div class="card mb-2">
+                    <div class="card-body">沪深300 - 指数值 - 涨跌幅</div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body">上证指数 - 指数值 - 涨跌幅</div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body">深证成指 - 指数值 - 涨跌幅</div>
+                </div>
+                <!-- 更多市场指数 -->
+            </section>
+            <aside class="col-md-3">
+                <h2>最新财经新闻</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">新闻标题1</a></li>
+                    <li class="list-group-item"><a href="#">新闻标题2</a></li>
+                    <!-- 更多新闻 -->
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <!-- 底部导航栏 -->
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <nav class="nav">
+                <a class="nav-link active" href="#">首页</a>
+                <a class="nav-link" href="#">股票详情</a>
+                <a class="nav-link" href="#">预警</a>
+                <a class="nav-link" href="#">我的</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="bundle.js" defer></script>
+</body>
+</html>
